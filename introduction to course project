@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Design and Analysis of Algorithms</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f9f9f9;
+        }
+
+        /* Header Styling */
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            background: linear-gradient(90deg, #333, #4CAF50);
+            padding: 20px;
+            margin: 0;
+            font-size: 2.5rem;
+            border-bottom: 3px solid #4CAF50;
+        }
+
+        h2 {
+            color: #f4d03f;
+            border-left: 5px solid #4CAF50;
+            padding-left: 10px;
+            font-size: 1.8rem;
+            margin-top: 30px;
+        }
+
+        /* Main Content Styling */
+        p {
+            margin: 20px 0;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        li strong {
+            color: #4CAF50;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background: #4CAF50;
+            color: #121212;
+            font-size: 0.9rem;
+            font-weight: bold;
+            box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction to Design and Analysis of Algorithms</h1>
+    <div class="container">
+        <p>
+            The course <strong>Design and Analysis of Algorithms</strong> delves into the fundamental concepts of algorithmic problem-solving, 
+            emphasizing both the theoretical and practical aspects. It serves as a cornerstone for understanding how to create efficient solutions 
+            to computational problems by studying the intricacies of algorithm design and performance analysis.
+        </p>
+
+        <h2>What is the course about?</h2>
+        <p>
+            This course focuses on equipping students with the skills to design algorithms, analyze their efficiency in terms of time and space, 
+            and apply them to solve real-world problems. It covers essential algorithmic paradigms such as divide and conquer, greedy strategies, 
+            dynamic programming, and backtracking, alongside foundational mathematical tools for analyzing algorithm complexity.
+        </p>
+
+        <h2>What kind of data structures and algorithms have you studied?</h2>
+        <p>Throughout the course, various data structures and algorithms have been explored, including:</p>
+        <ul>
+            <li>
+                <strong>Data Structures:</strong> Arrays, linked lists, stacks, queues, heaps, hash tables, trees (binary trees, binary search trees, 
+                AVL trees, 2-3 trees), and graphs (representation and traversal techniques).
+            </li>
+            <li>
+                <strong>Algorithms:</strong> Sorting algorithms (e.g., quicksort, mergesort, heapsort), searching algorithms (linear and binary search), 
+                graph algorithms (DFS, BFS, shortest path algorithms like Dijkstra's), and advanced algorithms for optimization and problem-solving.
+            </li>
+        </ul>
+
+        <h2>How do you connect the course with real-time applications?</h2>
+        <p>The concepts learned in this course have extensive real-time applications, including:</p>
+        <ul>
+            <li>
+                <strong>Optimized Searching and Sorting:</strong> Used in databases, search engines, and e-commerce platforms to handle vast amounts 
+                of data efficiently.
+            </li>
+            <li>
+                <strong>Graph Algorithms:</strong> Applied in navigation systems, social networks, and communication networks for route optimization 
+                and connectivity analysis.
+            </li>
+            <li>
+                <strong>Dynamic Programming:</strong> Used in bioinformatics (sequence alignment), financial modeling (portfolio optimization), and 
+                AI (game theory and decision-making).
+            </li>
+            <li>
+                <strong>Tree Structures:</strong> Crucial for organizing data in file systems, hierarchical databases, and autocompletion features in 
+                search bars.
+            </li>
+        </ul>
+    </div>
+    <footer>
+        &copy; 2024 - Design and Analysis of Algorithms
+    </footer>
+</body>
+</html>
