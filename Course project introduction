@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryanagari - E-Commerce Logistics and Customer Experience</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .section-header {
+            font-size: 1.5rem;
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+        th {
+            background-color: #4a90e2;
+            color: white;
+        }
+        tr:nth-child(odd) {
+            background-color: #fafafa;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .portfolio-links {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .portfolio-links a {
+            background-color: #4a90e2;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        .portfolio-links a:hover {
+            background-color: #357ab7;
+        }
+        .portfolio-links a:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Suryanagari - E-Commerce Logistics and Customer Experience
+    </header>
+
+    <div class="container">
+        <h1>Course Project Introduction</h1>
+
+        <h2 class="section-header">Problem Space and How It Was Arrived At</h2>
+        <p>
+            The problem space revolves around enhancing e-commerce logistics and customer experience in the context of a smart city. 
+            The problem was identified based on the growing demand for efficient logistics and personalized customer service in a rapidly 
+            developing urban environment. As e-commerce platforms become increasingly complex, the logistics of handling vast amounts 
+            of products, customer demands, and delivery routes must be optimized.
+        </p>
+        <p>
+            The problem definition emerged from discussions on smart city infrastructure, where the interaction between technology, 
+            transportation, and urban design plays a key role in shaping the efficiency of business operations. By leveraging 
+            data-driven algorithms, the aim is to address challenges in delivery optimization, pricing, inventory management, fraud detection, 
+            and product cataloging.
+        </p>
+
+        <h2 class="section-header">Findings from the White Paper</h2>
+        <p>
+            The white paper summarized the key challenges in e-commerce logistics, especially in urban settings. Major findings included 
+            the need for real-time delivery optimization, dynamic pricing based on demand, fraud detection mechanisms, and efficient product 
+            management systems. Algorithms such as Dijkstra’s, Bellman-Ford, and dynamic programming techniques were identified as crucial 
+            in optimizing logistics and operations.
+        </p>
+
+        <h2 class="section-header">Reflection on City Design and Business Case Identification</h2>
+        <p>
+            In the context of city design, we considered factors like urban transportation systems, data collection via sensors, 
+            customer demand fluctuations, and the availability of real-time data to improve the e-commerce experience. 
+            Business cases were identified by analyzing operational bottlenecks, customer needs, and technological feasibility. 
+            Each case focuses on an area where algorithmic solutions can make the biggest impact.
+        </p>
+
+        <h2 class="section-header">Problem Definition and Team Details</h2>
+        <p><strong>Problem Statement:</strong> Enhancing E-Commerce Logistics and Customer Experience in a Smart City</p>
+        <p><strong>Team Name:</strong> Suryanagari</p>
+        <p><strong>Team No:</strong> 04</p>
+        <p><strong>Domain:</strong> E-Commerce</p>
+
+        <h2 class="section-header">Business Cases and Algorithms</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>SI No.</th>
+                    <th>Business Case Identified</th>
+                    <th>Description</th>
+                    <th>Owner</th>
+                    <th>Portable Tools (Algorithms)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Order Delivery Optimization</td>
+                    <td>Optimizes delivery routes and schedules.</td>
+                    <td>Bhagyashri</td>
+                    <td>Dijkstra’s, Bellman-Ford, Floyd-Warshall</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dynamic Pricing Optimization</td>
+                    <td>Adjusts prices in real-time to maximize profits.</td>
+                    <td>Sahana</td>
+                    <td>Quick Sort, Merge Sort, Heap Sort</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Customer Segmentation</td>
+                    <td>Groups customers to improve marketing strategies.</td>
+                    <td>Vachanashree</td>
+                    <td>Binary Search, Merge Sort, Quick Sort</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Efficient Inventory Management</td>
+                    <td>Predicts demand to maintain optimal stock levels.</td>
+                    <td>Sohan</td>
+                    <td>Bubble Sort, Selection Sort, Binary Search</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Fraud Detection</td>
+                    <td>Identifies fraudulent activities in transactions.</td>
+                    <td>Bhagyashri, Sahana</td>
+                    <td>Prim’s, Kruskal’s, Floyd-Warshall</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Product Catalog Management</td>
+                    <td>Manages and organizes product listings.</td>
+                    <td>Vachanashree, Sohan</td>
+                    <td>String Matching, Linear Search, Binary Search</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="portfolio-links">
+            <h3>Team Member Portfolios</h3>
+            <p>Click on the names to view the team members' portfolios (to be updated later):</p>
+            <a href="#" target="_blank">Bhagyashri's Portfolio</a>
+            <a href="#" target="_blank">Sahana's Portfolio</a>
+            <a href="#" target="_blank">Vachanashree's Portfolio</a>
+            <a href="#" target="_blank">Sohan's Portfolio</a>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2024 Suryanagari E-Commerce Logistics Project | Design and Analysis of Algorithms
+    </footer>
+
+</body>
+</html>
