@@ -12,16 +12,47 @@
             margin: 0;
             padding: 0;
             line-height: 1.8;
+            overflow-x: hidden;
+            animation: fadeIn 2s ease-in-out;
         }
+
         header {
             background-color: #4a90e2;
             color: white;
             text-align: center;
             padding: 40px;
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 600;
             text-transform: uppercase;
+            animation: bounceIn 2s ease;
         }
+
+        @keyframes bounceIn {
+            0% {
+                transform: translateY(-200px);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(30px);
+                opacity: 1;
+            }
+            80% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
         .container {
             width: 80%;
             margin: 40px auto;
@@ -29,50 +60,142 @@
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            animation: floatUp 2s ease-in-out;
         }
+
+        @keyframes floatUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         h1, h2, h3 {
             color: #333;
             margin-bottom: 15px;
+            animation: fadeInLeft 2s ease;
         }
+
+        @keyframes fadeInLeft {
+            0% {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
         .section-header {
             font-size: 1.5rem;
             color: #4a90e2;
             border-bottom: 2px solid #4a90e2;
             padding-bottom: 5px;
             margin-bottom: 20px;
+            animation: fadeInUp 2s ease-in-out;
         }
+
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 30px;
+            animation: fadeInUp 2.5s ease-in-out;
         }
+
         th, td {
             padding: 12px;
             text-align: left;
             border: 1px solid #ddd;
             font-size: 1rem;
+            transition: background-color 0.3s;
         }
+
         th {
             background-color: #4a90e2;
             color: white;
+            transform: rotateX(0deg);
+            animation: flipInX 1s ease-in-out;
         }
+
+        @keyframes flipInX {
+            0% {
+                transform: rotateX(90deg);
+                opacity: 0;
+            }
+            100% {
+                transform: rotateX(0);
+                opacity: 1;
+            }
+        }
+
         tr:nth-child(odd) {
             background-color: #fafafa;
         }
+
         tr:hover {
             background-color: #f1f1f1;
+            cursor: pointer;
         }
+
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
             margin-top: 40px;
+            animation: zoomIn 2s ease;
         }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
         .portfolio-links {
             text-align: center;
             margin-top: 30px;
+            animation: bounceInUp 2s ease;
         }
+
+        @keyframes bounceInUp {
+            0% {
+                transform: translateY(200px);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(-20px);
+                opacity: 1;
+            }
+            80% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
         .portfolio-links a {
             background-color: #4a90e2;
             color: white;
@@ -81,13 +204,46 @@
             margin: 10px;
             border-radius: 5px;
             font-size: 1.1rem;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
+
         .portfolio-links a:hover {
             background-color: #357ab7;
+            transform: translateY(-5px);
         }
+
         .portfolio-links a:active {
-            transform: translateY(1px);
+            transform: translateY(2px);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            header {
+                padding: 20px;
+                font-size: 1.5rem;
+            }
+            table {
+                font-size: 0.9rem;
+            }
+            .portfolio-links a {
+                font-size: 1rem;
+                padding: 10px 15px;
+            }
+        }
+
+        /* Table Responsiveness */
+        @media (max-width: 600px) {
+            table, th, td {
+                font-size: 0.9rem;
+            }
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -106,12 +262,6 @@
             The problem was identified based on the growing demand for efficient logistics and personalized customer service in a rapidly 
             developing urban environment. As e-commerce platforms become increasingly complex, the logistics of handling vast amounts 
             of products, customer demands, and delivery routes must be optimized.
-        </p>
-        <p>
-            The problem definition emerged from discussions on smart city infrastructure, where the interaction between technology, 
-            transportation, and urban design plays a key role in shaping the efficiency of business operations. By leveraging 
-            data-driven algorithms, the aim is to address challenges in delivery optimization, pricing, inventory management, fraud detection, 
-            and product cataloging.
         </p>
 
         <h2 class="section-header">Findings from the White Paper</h2>
