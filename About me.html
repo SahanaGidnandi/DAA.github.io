@@ -3,61 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>About Me - Sahana Gidnandi</title>
+    <style>
+        /* Reset and General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9; /* Light background color */
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #A7D8D9; /* Light teal color */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2em;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #ffffff; /* White background for the container */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 1.5em;
+            color: #FFB6B9; /* Soft pink color */
+            border-bottom: 2px solid #FFB6B9;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            color: #555;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            background: #A7D8D9; /* Light teal color */
+            color: white;
+            padding: 10px 0;
+            font-size: 0.9em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Hello, I'm Sahana Gidnandi 👋</h1>
-        <p>I am passionate about technology and problem-solving. Here's a glimpse of my work:</p>
-    </header>
 
-    <section>
-        <h2>🛠 Projects</h2>
-        <ul>
-            <li><strong>Project 1</strong>: A short description of your project1.</li>
-            <li><strong>Project 2</strong>: A short description of another project2.</li>
-        </ul>
+<header>
+    About Me - Sahana Gidnandi
+</header>
 
-        <h2>🚀 Skills</h2>
-        <ul>
-            <li>C++, Python, JavaScript</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Web Development (React.js, Node.js)</li>
-        </ul>
+<div class="container">
+    <div class="section">
+        <h2>Personal Details</h2>
+        <p><strong>Name:</strong> Sahana Gidnandi</p>
+        <p><strong>USN:</strong> 01FE23BCS185</p>
+    </div>
 
-        <h2>🌐 Find Me Online</h2>
-        <ul>
-            <li><a href="https://github.com/your-github-username" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a></li>
-        </ul>
+    <div class="section">
+        <h2>About Me</h2>
+        <p>Hello! I am a Computer Science student at <strong>K L E Technological University</strong>. My interests include exploring the design and analysis of algorithms and solving complex computational problems.</p>
+    </div>
 
-        <h2>Portfolio Topic</h2>
-        <dl>
-            <dt>Course Name</dt>
-            <dd>Design and analysis of algorithm</dd>
+    <div class="section">
+        <h2>Course Details</h2>
+        <p><strong>Course Name:</strong> Design and Analysis of Algorithms</p>
+        <p><strong>Instructor:</strong> Arundati A</p>
+        <p><strong>University:</strong> K L E Technological University</p>
+        <a href="index.html" class="go-back-button">Go Back</a>
+    </div>
+</div>
 
-            <dt>Course Code</dt>
-            <dd>24ECSC205</dd>
+<footer>
+    &copy; 2024 Sahana Gidnandi | K L E Technological University
+</footer>
 
-            <dt>Name</dt>
-            <dd>Deepika Pawar</dd>
-
-            <dt>SRN</dt>
-            <dd>01FE23BCS181</dd>
-
-            <dt>Course Instructor</dt>
-            <dd>Arundhati A</dd>
-
-            <dt>University</dt>
-            <dd>Kle Technological University,Vidyanagar,Hubli</dd>
-
-            <dt>Portfolio Topic/Domain</dt>
-            <dd>DAA</dd>
-        </dl>
-
-        <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
-    </section>
 </body>
 </html>
