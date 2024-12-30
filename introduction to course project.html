@@ -11,24 +11,24 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: #f9f9f9;
+            background-color: #f4f4f9; /* Soft light gray background */
+            color: #333; /* Dark gray text for good readability */
         }
 
         /* Header Styling */
         h1 {
             text-align: center;
-            color: #4CAF50;
-            background: linear-gradient(90deg, #333, #4CAF50);
+            color: #2c3e50; /* Dark slate gray for header */
+            background: linear-gradient(90deg, #7f8c8d, #2c3e50); /* Subtle gradient */
             padding: 20px;
             margin: 0;
             font-size: 2.5rem;
-            border-bottom: 3px solid #4CAF50;
+            border-bottom: 3px solid #7f8c8d;
         }
 
         h2 {
-            color: #f4d03f;
-            border-left: 5px solid #4CAF50;
+            color: #34495e; /* Slightly lighter dark gray for headings */
+            border-left: 5px solid #7f8c8d; /* Soft gray accent */
             padding-left: 10px;
             font-size: 1.8rem;
             margin-top: 30px;
@@ -38,6 +38,7 @@
         p {
             margin: 20px 0;
             font-size: 1.1rem;
+            color: #555; /* Lighter gray text for paragraphs */
         }
 
         ul {
@@ -51,7 +52,7 @@
         }
 
         li strong {
-            color: #4CAF50;
+            color: #2c3e50; /* Dark gray for emphasized text */
         }
 
         /* Container Styling */
@@ -59,9 +60,9 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background: #1e1e1e;
+            background: #ffffff; /* White background for content area */
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
         }
 
         /* Footer Styling */
@@ -69,11 +70,27 @@
             text-align: center;
             margin-top: 30px;
             padding: 10px;
-            background: #4CAF50;
-            color: #121212;
+            background: #7f8c8d; /* Soft gray-green background */
+            color: #f4f4f9; /* Light text for footer */
             font-size: 0.9rem;
             font-weight: bold;
-            box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Link Styling */
+        .go-back-button {
+            display: inline-block;
+            background-color: #7f8c8d;
+            color: #f4f4f9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .go-back-button:hover {
+            background-color: #95a5a6; /* Slightly lighter shade on hover */
         }
     </style>
 </head>
@@ -128,6 +145,7 @@
         </ul>
         <a href="index.html" class="go-back-button">Go Back</a>
     </div>
+
     <footer>
         &copy; 2024 - Design and Analysis of Algorithms
     </footer>
