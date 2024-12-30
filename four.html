@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efficient Inventory Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            text-transform: uppercase;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .links {
+            margin-top: 30px;
+        }
+
+        .link-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-button:hover {
+            background-color: #0056b3;
+        }
+
+        .animated-section {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container animated-section">
+    <h1>Efficient Inventory Management</h1>
+    <p><strong>Purpose:</strong> Efficient inventory management ensures that products are available in the right quantities at the right time, preventing overstocking or stockouts, and improving overall supply chain efficiency. Predicting demand and using effective sorting and searching techniques helps businesses maintain optimal stock levels.</p>
+    <p><strong>Usage of Portable Tools:</strong></p>
+
+    <ul>
+        <li><strong>Bubble Sort:</strong> A simple sorting algorithm that sorts products based on stock levels, demand, or expiration dates. Prioritizes products that need restocking.</li>
+        <li><strong>Selection Sort:</strong> Organizes products based on their demand, helping businesses focus on high-demand items first.</li>
+        <li><strong>Binary Search:</strong> Efficiently finds the stock level of a product in a sorted list, reducing the time spent searching.</li>
+    </ul>
+
+    <div class="links">
+        <a href="bub.cpp" class="link-button">Bubble Sort Code</a>
+        <a href="sel.cpp" class="link-button">Selection Sort Code</a>
+        <a href="bin.cpp" class="link-button">Binary Search Code</a>
+    </div>
+
+    <a href="Course project introduction.html" class="back-button">Go Back</a>
+</div>
+
+</body>
+</html>
