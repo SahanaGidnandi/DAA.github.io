@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Delivery Optimization Algorithms</title>
+  <style>
+    /* Base Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      text-align: center;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: #45a049;
+    }
+
+    /* Go Back Button */
+    .go-back-btn {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .go-back-btn:hover {
+      background-color: #e53935;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .content {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <h1>Order Delivery Optimization Algorithms</h1>
+
+  <div class="content">
+    <!-- Dijkstra's Algorithm Card -->
+    <div class="card">
+      <h3>Dijkstra’s Algorithm</h3>
+      <p>Finds the shortest path between two nodes in a graph. It is used to calculate the most efficient delivery routes, minimizing time or distance.</p>
+      <a href="dij1.cpp" target="_blank">View C++ Code</a>
+    </div>
+
+    <!-- Bellman-Ford Algorithm Card -->
+    <div class="card">
+      <h3>Bellman-Ford Algorithm</h3>
+      <p>Handles graphs with negative weights (e.g., discounts, penalties). It finds the shortest path in such cases, unlike Dijkstra's algorithm.</p>
+      <a href="bell1.cpp" target="_blank">View C++ Code</a>
+    </div>
+
+    <!-- Floyd-Warshall Algorithm Card -->
+    <div class="card">
+      <h3>Floyd-Warshall Algorithm</h3>
+      <p>Finds the shortest paths between all pairs of nodes in a graph. It is useful when optimizing delivery routes for multiple destinations.</p>
+      <a href="floyd.cpp" target="_blank">View C++ Code</a>
+    </div>
+  </div>
+
+  <!-- Go Back Button -->
+  <button class="go-back-btn" onclick="window.history.back()">Go Back</button>
+
+</body>
+</html>
