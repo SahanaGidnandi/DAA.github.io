@@ -1,180 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Project: Design and Analysis of Algorithms</title>
-    <style>
-        /* General Styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #f4f4f9;
-            overflow-x: hidden;
-        }
+#include <iostream>
+using namespace std;
 
-        /* Header Styling */
-        header {
-            background: linear-gradient(90deg, #4CAF50, #2196F3);
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            animation: slideInDown 1s ease-in-out;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-
-        /* Navigation Bar */
-        nav {
-            background: #333;
-            text-align: center;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 10px 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        nav ul li {
-            margin: 0;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            background: #4CAF50;
-            transform: scale(1.1);
-        }
-
-        /* Main Content */
-        main {
-            padding: 20px;
-            background: #f4f4f9;
-            color: #333;
-            margin: 20px auto;
-            max-width: 800px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            animation: slideInUp 1s ease-in-out;
-        }
-
-        main h2 {
-            color: #4CAF50;
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-
-        main p {
-            margin-bottom: 20px;
-        }
-
-        /* Footer Styling */
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #2196F3;
-            color: white;
-            margin-top: 20px;
-            animation: fadeInUp 1.5s ease-in-out;
-        }
-
-        /* Animations */
-        @keyframes slideInDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
+void selectionSort(int arr[], int size) {
+    for (int i = 0; i < size - 1; i++) {
+        int minIndex = i;
+        for (int j = i + 1; j < size; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
             }
         }
+        swap(arr[minIndex], arr[i]);
+    }
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
+int main() {
+    int arr[] = {64, 25, 12, 22, 11};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
-        @keyframes slideInUp {
-            from {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
+    selectionSort(arr, size);
 
-        @keyframes fadeInUp {
-            from {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Course Project: Design and Analysis of Algorithms</h1>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="About me.html">About me</a></li>
-            <li><a href="introduction to course project.html">Introduction to course project</a></li>
-            <li><a href="Course project introduction.html">Course project introduction</a></li>
-            <li><a href="course learning reflections.html">Course learning reflections</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Project Overview</h2>
-            <p>
-                Welcome to the course project on <strong>Design and Analysis of Algorithms</strong>. This project focuses on applying algorithmic 
-                principles to solve real-world challenges in a systematic and efficient manner.
-            </p>
-        </section>
-        <section>
-            <h2>Problem Statement</h2>
-            <p>
-                <strong>Enhancing E-Commerce Logistics and Customer Experience in a Smart City:</strong>  
-                The goal is to develop algorithms and data structures that optimize e-commerce logistics, ensuring faster delivery times, 
-                dynamic route planning, and an enhanced customer experience. This involves analyzing big data, implementing efficient 
-                graph algorithms for route optimization, and applying techniques like dynamic programming to predict customer behavior and improve services.
-            </p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Design and Analysis of Algorithms Project</p>
-    </footer>
-</body>
-</html>
+    cout << "Sorted inventory based on demand: ";
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
