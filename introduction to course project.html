@@ -3,151 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Design and Analysis of Algorithms</title>
+    <meta name="description" content="Design and Analysis of Algorithms course project focusing on real-world algorithmic problem-solving.">
+    <meta name="author" content="Your Name">
+    <title>Design and Analysis of Algorithms</title>
     <style>
         /* General Styling */
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9; /* Soft light gray background */
-            color: #333; /* Dark gray text for good readability */
+            background: #f0f8ff;
+            color: #333;
+            overflow-x: hidden;
+            background: #ececec;
+            background-image: linear-gradient(45deg, rgba(99, 179, 216, 0.5), rgba(255, 255, 255, 0.1)), url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            background-size: 300% 300%;
+            animation: moveBackground 15s ease infinite;
         }
 
         /* Header Styling */
-        h1 {
+        header {
             text-align: center;
-            color: #2c3e50; /* Dark slate gray for header */
-            background: linear-gradient(90deg, #7f8c8d, #2c3e50); /* Subtle gradient */
-            padding: 20px;
+            color: #fff;
+            padding: 30px 0;
+            background-color: #3e4a4a;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 3px;
             margin: 0;
-            font-size: 2.5rem;
-            border-bottom: 3px solid #7f8c8d;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            animation: slideInUp 1s ease-in-out;
         }
 
         h2 {
-            color: #34495e; /* Slightly lighter dark gray for headings */
-            border-left: 5px solid #7f8c8d; /* Soft gray accent */
-            padding-left: 10px;
-            font-size: 1.8rem;
-            margin-top: 30px;
+            color: #4b6f6f;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
         }
 
-        /* Main Content Styling */
-        p {
-            margin: 20px 0;
-            font-size: 1.1rem;
-            color: #555; /* Lighter gray text for paragraphs */
+        /* Boxed Sections */
+        .box {
+            background-color: #e3f2f3;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease, background-color 0.4s ease;
+            animation: fadeInUp 1.5s ease-in-out;
         }
 
-        ul {
-            margin-left: 20px;
+        .box:hover {
+            background-color: #c1e0e1;
+            transform: translateY(-10px);
+        }
+
+        .box h3 {
+            font-size: 1.5rem;
+            color: #3e4a4a;
+            margin-bottom: 15px;
+        }
+
+        .box ul {
             padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
             font-size: 1.1rem;
         }
 
-        li strong {
-            color: #2c3e50; /* Dark gray for emphasized text */
-        }
-
-        /* Container Styling */
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #ffffff; /* White background for content area */
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        .box ul li {
+            margin-bottom: 10px;
         }
 
         /* Footer Styling */
         footer {
             text-align: center;
-            margin-top: 30px;
-            padding: 10px;
-            background: #7f8c8d; /* Soft gray-green background */
-            color: #f4f4f9; /* Light text for footer */
-            font-size: 0.9rem;
-            font-weight: bold;
-            box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            background-color: #3e4a4a;
+            color: white;
+            animation: fadeInUp 1.5s ease-in-out;
         }
 
-        /* Link Styling */
-        .go-back-button {
-            display: inline-block;
-            background-color: #7f8c8d;
-            color: #f4f4f9;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
-        .go-back-button:hover {
-            background-color: #95a5a6; /* Slightly lighter shade on hover */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 400% 400%;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Introduction to Design and Analysis of Algorithms</h1>
-    <div class="container">
-        <p>
-            The course <strong>Design and Analysis of Algorithms</strong> delves into the fundamental concepts of algorithmic problem-solving, 
-            emphasizing both the theoretical and practical aspects. It serves as a cornerstone for understanding how to create efficient solutions 
-            to computational problems by studying the intricacies of algorithm design and performance analysis.
-        </p>
+    <header>
+        <h1>Design and Analysis of Algorithms</h1>
+    </header>
 
-        <h2>What is the course about?</h2>
-        <p>
-            This course focuses on equipping students with the skills to design algorithms, analyze their efficiency in terms of time and space, 
-            and apply them to solve real-world problems. It covers essential algorithmic paradigms such as divide and conquer, greedy strategies, 
-            dynamic programming, and backtracking, alongside foundational mathematical tools for analyzing algorithm complexity.
-        </p>
+    <main>
+        <section>
+            <h2>What is the course about?</h2>
+            <p>
+                This course focuses on equipping students with the skills to design algorithms, analyze their efficiency in terms of time and space, and apply them to solve real-world problems. It covers essential algorithmic paradigms such as divide and conquer, greedy strategies, dynamic programming, and backtracking, alongside foundational mathematical tools for analyzing algorithm complexity.
+            </p>
+        </section>
 
-        <h2>What kind of data structures and algorithms have you studied?</h2>
-        <p>Throughout the course, various data structures and algorithms have been explored, including:</p>
-        <ul>
-            <li>
-                <strong>Data Structures:</strong> Arrays, linked lists, stacks, queues, heaps, hash tables, trees (binary trees, binary search trees, 
-                AVL trees, 2-3 trees), and graphs (representation and traversal techniques).
-            </li>
-            <li>
-                <strong>Algorithms:</strong> Sorting algorithms (e.g., quicksort, mergesort, heapsort), searching algorithms (linear and binary search), 
-                graph algorithms (DFS, BFS, shortest path algorithms like Dijkstra's), and advanced algorithms for optimization and problem-solving.
-            </li>
-        </ul>
+        <section>
+            <h2>What kind of data structures have you studied?</h2>
+            <div class="box">
+                <h3>Data Structures:</h3>
+                <ul>
+                    <li>Arrays</li>
+                    <li>Linked Lists</li>
+                    <li>Stacks and Queues</li>
+                    <li>Heaps</li>
+                    <li>Hash Tables</li>
+                    <li>Trees:
+                        <ul>
+                            <li>Binary Trees</li>
+                            <li>Binary Search Trees</li>
+                            <li>AVL Trees</li>
+                            <li>2-3 Trees</li>
+                        </ul>
+                    </li>
+                    <li>Graphs (representation and traversal techniques)</li>
+                </ul>
+                <p>
+                    Data structures are fundamental in solving algorithmic problems efficiently. Arrays and linked lists allow for simple data storage and manipulation, while advanced structures like heaps and hash tables optimize searching and retrieval. Trees and graphs provide powerful methods for handling hierarchical and connected data.
+                </p>
+            </div>
+        </section>
 
-        <h2>How do you connect the course with real-time applications?</h2>
-        <p>The concepts learned in this course have extensive real-time applications, including:</p>
-        <ul>
-            <li>
-                <strong>Optimized Searching and Sorting:</strong> Used in databases, search engines, and e-commerce platforms to handle vast amounts 
-                of data efficiently.
-            </li>
-            <li>
-                <strong>Graph Algorithms:</strong> Applied in navigation systems, social networks, and communication networks for route optimization 
-                and connectivity analysis.
-            </li>
-            <li>
-                <strong>Dynamic Programming:</strong> Used in bioinformatics (sequence alignment), financial modeling (portfolio optimization), and 
-                AI (game theory and decision-making).
-            </li>
-            <li>
-                <strong>Tree Structures:</strong> Crucial for organizing data in file systems, hierarchical databases, and autocompletion features in 
-                search bars.
-            </li>
-        </ul>
-        <a href="index.html" class="go-back-button">Go Back</a>
-    </div>
+        <section>
+            <h2>What kind of algorithms have you studied?</h2>
+            <div class="box">
+                <h3>Algorithms:</h3>
+                <ul>
+                    <li>Sorting Algorithms:
+                        <ul>
+                            <li>Quicksort</li>
+                            <li>Mergesort</li>
+                            <li>Heapsort</li>
+                        </ul>
+                    </li>
+                    <li>Searching Algorithms:
+                        <ul>
+                            <li>Linear Search</li>
+                            <li>Binary Search</li>
+                        </ul>
+                    </li>
+                    <li>Graph Algorithms:
+                        <ul>
+                            <li>Depth-First Search (DFS)</li>
+                            <li>Breadth-First Search (BFS)</li>
+                            <li>Shortest Path Algorithms (Dijkstra's)</li>
+                        </ul>
+                    </li>
+                    <li>Advanced Algorithms:
+                        <ul>
+                            <li>Dynamic Programming</li>
+                            <li>Greedy Algorithms</li>
+                            <li>Backtracking</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>
+                    Sorting and searching algorithms form the core of many computational tasks. We studied advanced graph algorithms for solving real-world connectivity and routing problems. Dynamic programming and greedy algorithms were introduced as techniques to tackle optimization problems, while backtracking was discussed for solving combinatorial problems.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>How do you connect the course with real-time applications?</h2>
+            <p>
+                The concepts learned in this course have extensive real-time applications, including:
+            </p>
+            <h3>Optimized Searching and Sorting:</h3>
+            <ul>
+                <li>Used in databases, search engines, and e-commerce platforms to handle vast amounts of data efficiently.</li>
+            </ul>
+
+            <h3>Graph Algorithms:</h3>
+            <ul>
+                <li>Applied in navigation systems, social networks, and communication networks for route optimization and connectivity analysis.</li>
+            </ul>
+
+            <h3>Dynamic Programming:</h3>
+            <ul>
+                <li>Used in bioinformatics (sequence alignment), financial modeling (portfolio optimization), and AI (game theory and decision-making).</li>
+            </ul>
+
+            <h3>Tree Structures:</h3>
+            <ul>
+                <li>Crucial for organizing data in file systems, hierarchical databases, and autocompletion features in search bars.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>References - Design and Analysis of Algorithms</h2>
+            <h3>Books</h3>
+            <ul>
+                <li><strong>Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</strong>, <em>Introduction to Algorithms, Fourth Edition</em>, The MIT Press, 2022.</li>
+                <li><strong>Anany V. Levitin</strong>, <em>Introduction to the Design and Analysis of Algorithms</em>, Addison-Wesley Longman Publishing Co, 2012.</li>
+            </ul>
+            <h3>Additional References</h3>
+            <ul>
+                <li><strong>Hemant Jain</strong>, <em>Problem Solving Using Data and Algorithms Using C</em>, Taran Technologies Private Limited, 2016.</li>
+                <li><strong>HackerRank / CodeChef / SPOJ</strong>, <em>Competitive Programming and Problem Solving Platforms</em>.</li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
-        &copy; 2024 - Design and Analysis of Algorithms
+        <p>&copy; 2024 Design and Analysis of Algorithms Course</p>
     </footer>
 </body>
 </html>
